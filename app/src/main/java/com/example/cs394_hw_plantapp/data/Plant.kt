@@ -11,5 +11,5 @@ data class Plant(
     val name:String,
     val family_name:String,
     val scientific_name:String,
-    val image:URI
+    val image:Int
 )

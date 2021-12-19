@@ -11,7 +11,7 @@ import androidx.room.Query
 interface PlantDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addPlant(plant: Plant)
+    fun addPlant(plant: Plant)
 
     @Query(value = "SELECT * FROM plant_table ORDER BY id ASC")
     fun readAllData(): LiveData<List<Plant>>
