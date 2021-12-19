@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class PlantViewModel(application:Application): AndroidViewModel {
+class PlantViewModel(application:Application): AndroidViewModel(application) {
 
     private val readAllData: LiveData<List<Plant>>
     private val repository: PlantRepository
