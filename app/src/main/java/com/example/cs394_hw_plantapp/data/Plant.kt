@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.net.URI
 
-@Entity(tableName = "plants")
+@Entity(tableName = "plant_table")
 data class Plant(
     @PrimaryKey(autoGenerate = true)
     val id:Int,
